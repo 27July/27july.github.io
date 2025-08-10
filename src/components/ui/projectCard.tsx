@@ -25,7 +25,7 @@ export default function ProjectCard({project}: ProjectCardProps){
                 alt={project.title}
                 width={800}
                 height={450}
-                className = 'w-full h-auto rounded-t-md object-cover'
+                className = 'w-full h-60 rounded-t-md object-cover'
                 //Do not lazy load it
                 priority = {true}
                 unoptimized = {true}/>
