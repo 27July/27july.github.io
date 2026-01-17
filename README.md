@@ -4,7 +4,7 @@
 A simple personal website, deployed on GitHub Pages, to showcase my projects. It features both light and dark modes to match system preferences, and leverages GitHub Actions for seamless CI/CD and effortless future updates.
 
 ## Project Status:
-♾️Ongoing — regularly updated with new projects upon completion.
+Ongoing — regularly updated with new projects upon completion.
 
 ## Technology and Tools:
 [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=plastic&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) 
