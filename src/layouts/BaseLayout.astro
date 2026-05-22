@@ -1,0 +1,30 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Zi Hao Wee",
+  description = "Personal project portfolio for Zi Hao Wee.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <main class="min-h-screen bg-[#151B26] text-[#ECEFF4]">
+      <div class="mx-auto max-w-6xl px-5 py-8 sm:px-8 lg:px-10">
+        <slot />
+      </div>
+    </main>
+  </body>
+</html>
