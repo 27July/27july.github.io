@@ -1,15 +1,23 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Header from "../components/Header.astro";
 import About from "../components/About.astro";
 import Footer from "../components/Footer.astro";
+import ProjectGrid from "../components/ProjectGrid";
+import BackToTop from "../components/BackToTop";
+
+const projectEntries = await getCollection("projects");
+const projects = projectEntries.map((entry) => ({
+  slug: entry.id,
+  ...entry.data,
+}));
 ---
 
 <BaseLayout title="Zi Hao Wee">
   <Header />
   <About />
-  <section id="projects" class="rounded-xl border border-[#3B4252] bg-[#202838]/45 p-6 text-[#D8DEE9]/75">
-    Projects section will be built in the next phases.
-  </section>
+  <ProjectGrid client:load projects={projects} />
+  <BackToTop client:load />
   <Footer />
 </BaseLayout>
