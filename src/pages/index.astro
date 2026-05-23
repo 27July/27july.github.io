@@ -1,12 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import About from "../components/About.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <BaseLayout title="Zi Hao Wee">
-  <section class="py-16">
-    <h1 class="text-3xl font-semibold tracking-tight sm:text-4xl">Zi Hao Wee</h1>
-    <p class="mt-4 text-[#D8DEE9]/76">
-      Phase 2 foundation is ready. Next we build Header, About, and Footer.
-    </p>
+  <Header />
+  <About />
+  <section id="projects" class="rounded-xl border border-[#3B4252] bg-[#202838]/45 p-6 text-[#D8DEE9]/75">
+    Projects section will be built in the next phases.
   </section>
+  <Footer />
 </BaseLayout>
