@@ -1,0 +1,41 @@
+<button
+  id="back-to-top"
+  type="button"
+  aria-label="Back to top"
+  class="fixed bottom-5 right-5 z-50 hidden h-10 w-10 items-center justify-center rounded-full border border-[#4C566A]/70 bg-[#202838]/95 text-[#D8DEE9] shadow-lg shadow-black/30 transition hover:border-[#88C0D0]/60 hover:text-[#88C0D0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#88C0D0] focus-visible:ring-offset-2 focus-visible:ring-offset-[#151B26]"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="h-4 w-4"
+    aria-hidden="true"
+  >
+    <path d="m18 15-6-6-6 6"></path>
+  </svg>
+</button>
+
+<script>
+  const button = document.getElementById("back-to-top");
+  if (button) {
+    const onScroll = () => {
+      if (window.scrollY > 320) {
+        button.classList.remove("hidden");
+        button.classList.add("inline-flex");
+      } else {
+        button.classList.add("hidden");
+        button.classList.remove("inline-flex");
+      }
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    button.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+</script>
