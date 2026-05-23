@@ -1,3 +1,22 @@
 <div class="about-sprite-wrap" aria-hidden="true">
-  <div class="about-sprite"></div>
+  <div class="about-sprite" id="about-sprite"></div>
 </div>
+
+<script>
+  const sprite = document.getElementById("about-sprite");
+  if (sprite) {
+    const frames = Array.from({ length: 10 }, (_, i) => `/animation/frame${i + 1}.png`);
+
+    const preloadFrame = (src) =>
+      new Promise((resolve) => {
+        const img = new Image();
+        img.onload = () => resolve(true);
+        img.onerror = () => resolve(false);
+        img.src = src;
+      });
+
+    Promise.all(frames.map(preloadFrame)).then(() => {
+      sprite.classList.add("is-ready");
+    });
+  }
+</script>
