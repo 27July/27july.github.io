@@ -1,92 +1,108 @@
-<section id="about" class="mb-14 max-w-3xl">
-  <h1 class="text-3xl font-semibold tracking-tight sm:text-4xl">Hi, I'm Zi Hao👋🏻</h1>
+---
+import AboutSprite from "./AboutSprite.astro";
+---
 
-  <p class="mt-6 text-xs font-medium uppercase tracking-[0.18em] text-[#88C0D0]">About</p>
+<section id="about" class="mb-14">
+  <div class="grid gap-8 lg:grid-cols-[minmax(0,3fr)_minmax(300px,1.5fr)] lg:items-start">
+    <div class="max-w-3xl">
+      <h1 class="text-3xl font-semibold tracking-tight sm:text-4xl">Hi, I'm Zi Hao</h1>
 
-  <p class="mt-1 text-base leading-8 text-[#D8DEE9]/76">
-    I’m a penultimate-year Computer Engineering student at Nanyang Technological University (NTU), Singapore, interested in software engineering, data engineering, and performance-focused systems. I’m currently building practical experience through personal projects, internships, and coursework.
-  </p>
+      <p class="mt-6 text-xs font-medium uppercase tracking-[0.18em] text-[#88C0D0]">About</p>
 
-  <p class="mt-4 text-base leading-8 text-[#D8DEE9]/76">
-    Beyond academics, I enjoy reading and writing poetry and playing basketball. I'm always keen to connect and collaborate, so feel free to check out my repositories or reach out!
-  </p>
+      <p class="mt-1 text-base leading-8 text-[#D8DEE9]/76">
+        I'm a penultimate-year Computer Engineering student at Nanyang Technological University
+        (NTU), Singapore, interested in software engineering, data engineering, and
+        performance-focused systems. I'm currently building practical experience through personal
+        projects, internships, and coursework.
+      </p>
 
-  <div class="mt-6 flex flex-wrap gap-3">
-    <a
-      href="#projects"
-      class="inline-flex items-center gap-2 rounded-full bg-[#5E81AC] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#81A1C1] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#88C0D0] focus-visible:ring-offset-2 focus-visible:ring-offset-[#151B26]"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="1.8"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="h-4 w-4"
-        aria-hidden="true"
-      >
-        <path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-      </svg>
-      View Projects
-    </a>
+      <p class="mt-4 text-base leading-8 text-[#D8DEE9]/76">
+        Beyond academics, I enjoy reading and writing poetry and playing basketball. I'm always
+        keen to connect and collaborate, so feel free to check out my repositories or reach out!
+      </p>
 
-    <a
-      href="https://github.com/27july"
-      target="_blank"
-      rel="noreferrer noopener"
-      class="inline-flex items-center gap-2 rounded-full border border-[#4C566A]/50 px-4 py-2 text-sm text-[#D8DEE9]/75 transition hover:border-[#88C0D0]/40 hover:text-[#88C0D0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#88C0D0] focus-visible:ring-offset-2 focus-visible:ring-offset-[#151B26]"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        class="h-4 w-4"
-        aria-hidden="true"
-      >
-        <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.1.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41a3.2 3.2 0 0 0-1.34-1.76c-1.1-.75.08-.74.08-.74a2.53 2.53 0 0 1 1.85 1.24 2.58 2.58 0 0 0 3.52 1 2.58 2.58 0 0 1 .77-1.62c-2.67-.3-5.47-1.34-5.47-5.94a4.65 4.65 0 0 1 1.24-3.22 4.32 4.32 0 0 1 .12-3.18s1-.33 3.3 1.23a11.44 11.44 0 0 1 6 0c2.28-1.56 3.29-1.23 3.29-1.23a4.32 4.32 0 0 1 .12 3.18 4.64 4.64 0 0 1 1.24 3.22c0 4.62-2.8 5.64-5.48 5.93a2.89 2.89 0 0 1 .82 2.24v3.32c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z"></path>
-      </svg>
-      GitHub
-    </a>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a
+          href="#projects"
+          class="inline-flex items-center gap-2 rounded-full bg-[#5E81AC] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#81A1C1] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#88C0D0] focus-visible:ring-offset-2 focus-visible:ring-offset-[#151B26]"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-4 w-4"
+            aria-hidden="true"
+          >
+            <path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          </svg>
+          View Projects
+        </a>
 
-    <a
-      href="https://www.linkedin.com/in/wee-zi-hao"
-      target="_blank"
-      rel="noreferrer noopener"
-      class="inline-flex items-center gap-2 rounded-full border border-[#4C566A]/50 px-4 py-2 text-sm text-[#D8DEE9]/75 transition hover:border-[#88C0D0]/40 hover:text-[#88C0D0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#88C0D0] focus-visible:ring-offset-2 focus-visible:ring-offset-[#151B26]"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        class="h-4 w-4"
-        aria-hidden="true"
-      >
-        <path d="M19 3A2.99 2.99 0 0 1 22 6v12a2.99 2.99 0 0 1-3 3H5a2.99 2.99 0 0 1-3-3V6a2.99 2.99 0 0 1 3-3h14Zm-.25 15.5v-5.3a3.2 3.2 0 0 0-3.4-3.45 2.93 2.93 0 0 0-2.63 1.45v-1.24h-2.7v8.54h2.82v-4.23c0-1.12.21-2.2 1.6-2.2 1.37 0 1.39 1.27 1.39 2.27v4.16h2.92ZM6.88 8.72a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28Zm1.41 9.78V9.96H5.47v8.54h2.82Z"></path>
-      </svg>
-      LinkedIn
-    </a>
+        <a
+          href="https://github.com/27july"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="inline-flex items-center gap-2 rounded-full border border-[#4C566A]/50 px-4 py-2 text-sm text-[#D8DEE9]/75 transition hover:border-[#88C0D0]/40 hover:text-[#88C0D0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#88C0D0] focus-visible:ring-offset-2 focus-visible:ring-offset-[#151B26]"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="h-4 w-4"
+            aria-hidden="true"
+          >
+            <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.1.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41a3.2 3.2 0 0 0-1.34-1.76c-1.1-.75.08-.74.08-.74a2.53 2.53 0 0 1 1.85 1.24 2.58 2.58 0 0 0 3.52 1 2.58 2.58 0 0 1 .77-1.62c-2.67-.3-5.47-1.34-5.47-5.94a4.65 4.65 0 0 1 1.24-3.22 4.32 4.32 0 0 1 .12-3.18s1-.33 3.3 1.23a11.44 11.44 0 0 1 6 0c2.28-1.56 3.29-1.23 3.29-1.23a4.32 4.32 0 0 1 .12 3.18 4.64 4.64 0 0 1 1.24 3.22c0 4.62-2.8 5.64-5.48 5.93a2.89 2.89 0 0 1 .82 2.24v3.32c0 .32.22.69.83.58A12 12 0 0 0 12 .5Z"></path>
+          </svg>
+          GitHub
+        </a>
 
-    <a
-      href="mailto:weezihao@gmail.com"
-      class="inline-flex items-center gap-2 rounded-full border border-[#4C566A]/50 px-4 py-2 text-sm text-[#D8DEE9]/75 transition hover:border-[#88C0D0]/40 hover:text-[#88C0D0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#88C0D0] focus-visible:ring-offset-2 focus-visible:ring-offset-[#151B26]"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="1.8"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="h-4 w-4"
-        aria-hidden="true"
-      >
-        <rect x="3" y="5" width="18" height="14" rx="2"></rect>
-        <path d="m3 7 9 6 9-6"></path>
-      </svg>
-      Email
-    </a>
+        <a
+          href="https://www.linkedin.com/in/wee-zi-hao"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="inline-flex items-center gap-2 rounded-full border border-[#4C566A]/50 px-4 py-2 text-sm text-[#D8DEE9]/75 transition hover:border-[#88C0D0]/40 hover:text-[#88C0D0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#88C0D0] focus-visible:ring-offset-2 focus-visible:ring-offset-[#151B26]"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="h-4 w-4"
+            aria-hidden="true"
+          >
+            <path d="M19 3A2.99 2.99 0 0 1 22 6v12a2.99 2.99 0 0 1-3 3H5a2.99 2.99 0 0 1-3-3V6a2.99 2.99 0 0 1 3-3h14Zm-.25 15.5v-5.3a3.2 3.2 0 0 0-3.4-3.45 2.93 2.93 0 0 0-2.63 1.45v-1.24h-2.7v8.54h2.82v-4.23c0-1.12.21-2.2 1.6-2.2 1.37 0 1.39 1.27 1.39 2.27v4.16h2.92ZM6.88 8.72a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28Zm1.41 9.78V9.96H5.47v8.54h2.82Z"></path>
+          </svg>
+          LinkedIn
+        </a>
+
+        <a
+          href="mailto:weezihao@gmail.com"
+          class="inline-flex items-center gap-2 rounded-full border border-[#4C566A]/50 px-4 py-2 text-sm text-[#D8DEE9]/75 transition hover:border-[#88C0D0]/40 hover:text-[#88C0D0] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#88C0D0] focus-visible:ring-offset-2 focus-visible:ring-offset-[#151B26]"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-4 w-4"
+            aria-hidden="true"
+          >
+            <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+            <path d="m3 7 9 6 9-6"></path>
+          </svg>
+          Email
+        </a>
+      </div>
+    </div>
+
+    <div class="hidden lg:flex lg:justify-end">
+      <AboutSprite />
+    </div>
   </div>
 </section>
