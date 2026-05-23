@@ -10,7 +10,14 @@ html {
 
 body {
   margin: 0;
-  background: #151b26;
+  background:
+    linear-gradient(
+      to bottom right,
+      rgba(94, 129, 172, 0.16),
+      rgba(136, 192, 208, 0.08),
+      rgba(180, 142, 173, 0.11)
+    ),
+    #151b26;
   color: #eceff4;
   font-family:
     Inter,
